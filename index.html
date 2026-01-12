@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animated CV</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .slide {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 5px black;
+            animation: slideShow 25s infinite;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+        }
+
+        @keyframes slideShow {
+            0%   { opacity: 0; }
+            10%  { opacity: 1; }
+            30%  { opacity: 1; }
+            40%  { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+        h1, h2, p, li {
+            animation: bounce 1.5s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            width: 70%;
+        }
+
+        li {
+            background-color: rgba(0,0,0,0.5);
+            padding: 10px;
+            margin: 6px 0;
+            border-radius: 10px;
+        }
+
+        .slide1 {
+            background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+            animation-delay: 0s;
+        }
+
+        .slide2 {
+            background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+            animation-delay: 5s;
+        }
+
+        .slide3 {
+            background-image: url("https://images.unsplash.com/photo-1493558103817-58b2924bce98");
+            animation-delay: 10s;
+        }
+
+        .slide4 {
+            background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+            animation-delay: 15s;
+        }
+
+        .slide5 {
+            background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
+            animation-delay: 20s;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="slide slide1">
+    <h1>Shamkalla Mounish</h1>
+    <h2>B.Tech Student | Intern</h2>
+    <p>
+        Motivated student with strong interest in technology,
+        learning, and personal development.
+    </p>
+</div>
+
+<div class="slide slide2">
+    <h2>About Me</h2>
+    <p>
+        I am currently pursuing B.Tech and actively participating in internships.
+        I enjoy learning new skills and improving my technical knowledge.
+    </p>
+</div>
+
+<div class="slide slide3">
+    <h2>Education</h2>
+    <ul>
+        <li>B.Tech – Ongoing</li>
+        <li>Intermediate – Completed</li>
+        <li>SSC – Completed</li>
+    </ul>
+</div>
+
+<div class="slide slide4">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML & CSS (Beginner)</li>
+        <li>Java (Basic)</li>
+        <li>Python (Basic)</li>
+        <li>Good Communication</li>
+        <li>Quick Learner</li>
+    </ul>
+</div>
+
+<div class="slide slide5">
+    <h2>Experience & Contact</h2>
+    <ul>
+        <li>Part-Time Employee – Reliance Smart Bazaar</li>
+        <li>Internship – Ongoing</li>
+        <li>Email: yourmail@gmail.com</li>
+        <li>Phone: +91 XXXXX XXXXX</li>
+        <li>Location: Rajampet, India</li>
+    </ul>
+</div>
+
+</body>
+</html>
